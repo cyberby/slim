@@ -14,6 +14,7 @@
 	<script type="text/javascript" src="<?= $this->base_url; ?>/lib/mask.js"></script>
 </head>
 <body ng-controller="userCtrl">
+	
 	<input type="hidden" id="urlBase" value="<?= $this->base_url; ?>" />
 	<div class="container">
 		<div id="sidebar">
@@ -101,5 +102,17 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		function getScope(ctrlName) {
+			console.log(ctrlName); 
+    		var sel = 'body[ng-controller="' + ctrlName + '"]';
+    		console.log(sel);
+    		var scope = angular.element(sel).scope();
+    		console.log(scope);
+    		//return angular.element(sel).scope();
+		}
+		var $scope = getScope('userCtrl');
+		//$scope.carregarUser();	
+	</script>
 </body>
 </html>

@@ -4,28 +4,9 @@ angular.module("slimApp").controller("userCtrl", function($scope, $http, $locati
 	var url = domainBase + urlBase.value //seta a url de base
 
 	$scope.exibirMensagem = false;
-	$scope.fazerLogin = function (login) {
-		$http.post(url+"/", login).success(function (data) {
-
-			if(data.success == true){//vai setar o tipo de alerta
-				$scope.messageType = "alert-success";
-			} else {
-				$scope.messageType = "alert-danger";
-			}
-			$scope.user.success = data.success;//seta se foi bem sucessido o login
-
-			$scope.message = data.message;//atribui mensagem
-			$scope.exibirMensagem = true;//seta se vai exibir a mensagem
-			
-			if(data.success == true){
-				window.location = url+'/users/'; //faz o redirecionamento para exibir os dados do usuário
-			}
-			
-		});
-	};
 
 	//carrega os dados do usuário
-	var carregarUser = function () {
+	$scope.carregarUser = function () {
 		$http.get(url+"/users/?ajax=true").success(function (data) {
 			if(data.success == true){
 				$scope.user = data.record;				
@@ -54,5 +35,6 @@ angular.module("slimApp").controller("userCtrl", function($scope, $http, $locati
 		return true;
 	};
 
-	carregarUser();
+
+	$scope.carregarUser();
 });

@@ -9,11 +9,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
 		<script type="text/javascript" src="<?= $this->base_url; ?>/js/app.js"></script>
-		<script type="text/javascript" src="<?= $this->base_url; ?>/js/controllers/userCtrl.js"></script>
+		<script type="text/javascript" src="<?= $this->base_url; ?>/js/controllers/loginCtrl.js"></script>
 		<script type="text/javascript" src="<?= $this->base_url; ?>/lib/ngCpfCnpj.js"></script>
 		<script type="text/javascript" src="<?= $this->base_url; ?>/lib/mask.js"></script>
 	</head>
-	<body class="login" ng-controller="userCtrl">
+	<body class="login" ng-controller="loginCtrl">
 		<input type="hidden" id="urlBase" value="<?= $this->base_url; ?>" />
 		<div>
 		<div class="login-box">
