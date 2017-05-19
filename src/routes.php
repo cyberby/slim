@@ -56,7 +56,8 @@ $app->get("/logout", function ($request, $response, $args) use ($app) {
     if($this->session->exists("usuario_logado")){
         $this->session->delete("usuario_logado");
     }
-    return $response->withRedirect( $request->getUri()->getBasePath()); 
+    $url = (!empty($request->getUri()->getBasePath())) ? $request->getUri()->getBasePath() : "/";
+    return $response->withRedirect( $url ); 
 });
 
 
