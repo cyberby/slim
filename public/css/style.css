@@ -1,0 +1,245 @@
+@font-face {
+	font-family: 'Montserrat Hairline';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Montserrat Hairline'), url('../fonts/Montserrat-Hairline.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	//src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+}
+html, body { 
+	margin:0; 
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+body.login{
+	background-color: #191818 !important;
+	
+}
+input:-webkit-autofill, input:focus:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.login input:-webkit-autofill, .login input:focus:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #212020 inset;
+}
+.container{
+	height: 100%;
+	padding-right: 0px;
+	padding-left: 0px;
+	width: 100%;
+	padding: 0px;
+}
+.header{
+	//font-family:'Myriad Pro Regular';
+	color: #acacac;
+	padding: 10px 30px 40px 30px;
+}
+.content{
+	padding: 10px 40px;
+}
+#sidebar{
+	height: 100%;
+	float: left;
+	background: #191818;
+	width: 200px;
+}
+#main{
+	float: left;
+	width: calc(100% - 200px)
+}
+#avatar{
+	text-align: center;
+	padding-top: 30px;
+    padding-bottom: 30px;
+}
+nav li{
+    padding: 10px 15px;
+    list-style-type: none;
+    border-bottom: 1px solid #222222;
+}
+nav li a{
+	color: #5d5d5d !important;
+}
+nav li i{
+	padding-right: 15px;
+}
+nav li.active{
+    background: #222222;
+    border-left: #ff2b77 2px solid;
+    color: #ffffff
+}
+h1{
+	color: #666666;
+	font-family:'Montserrat Hairline';
+	font-weight:normal;
+}
+.list-title {
+    float: left;
+    width: 70px;
+    color: #ff2b77;
+}
+span.list-subtitle{
+	color: #ff2b77;
+	margin-left: 10px;
+}
+.form-horizontal>div{
+	/*clear: both;*/
+}
+.form-control, .form-control:focus{
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+	border: 0px;
+	color: #ff2b77;
+	font-weight: bold;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-top: 2px;
+}
+.control-label {
+    text-align: left !important;
+    color: #acacac;
+    width: 70px;
+    float: left;
+    margin-top: 10px;
+}
+.form-group{
+	border: 1px solid #e8e8e8;
+    padding-left: 15px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    display: flow-root;
+    margin-bottom: 10px;
+}
+.form-box{
+    padding-left: 0px;
+    padding-right: 0px;
+    width: calc(100% - 70px);
+    float: left;
+}
+.form-subcontainer{
+	float: left;
+    margin-right: 10px;
+}
+form>div{
+	clear: both;
+}
+
+#nova-senha label, #repetir-senha label{
+	width: 110px;
+}
+#nova-senha .form-box, #repetir-senha .form-box{
+	width: calc(100% - 110px)
+}
+.btn-success{
+	background-color: #40ac54;
+    border: 0px;
+    border-radius: 2px;
+    font-size: 18px;
+    background-image: none;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(70,137,82,1);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(70,137,82,1);
+    box-shadow: 0px 3px 2px 0px rgba(70,137,82,1);
+    padding: 8px 25px;
+}
+.login-box {
+    background: #fff;
+    width: 340px;
+    margin: 10% auto 0;
+    border-radius: 10px;
+}
+.login-header{
+    background: #151515;
+    height: 40px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.login-content{
+	background: #212020;
+    padding: 10px 10px 20px 10px;
+
+}
+.btn-entrar{
+	width: 100%;
+    background: #3ea651;
+    border: 0px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 11px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.input-box{
+	padding: 0px 20px;
+}
+.input-box>div{
+	border-bottom: 1px solid #323131;
+    padding: 8px;
+}
+.input-box input, .input-box input:focus{
+    background: #212020;
+    border: 0px;
+    padding-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+	color: #ffffff !important;
+}
+.input-box i{
+	font-size: 22px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.fa-unlock-alt{
+	padding: 0px 3px;
+}
+.login-header i{
+    font-size: 20px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#exibir-mensagem{
+	text-align: center;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.list-box{
+	padding: 10px 15px;
+}
+#busca{
+	border: 1px solid #e8e8e8;
+    margin-top: 30px;
+    padding: 10px;
+}
+#busca::-webkit-input-placeholder { /* navegadores Webkit */
+    color:    #cccccc !important;
+}
+#busca:-moz-placeholder { /* Mozilla Firefox 4 até 18 */
+    color:    #cccccc !important;
+}
+#busca::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #cccccc !important;
+}
+#busca:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #cccccc !important;
+}
+#btn-buscar{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -30px;
+    height: 40px;
+    background: transparent;
+    border: 0px;
+}
+.password-box{
+	float: left;
+}
+.password-message {
+    float: left;
+    color: #e66e6e;
+    padding-top: 8px;
+    padding-left: 10px;
+}
