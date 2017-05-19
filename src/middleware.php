@@ -10,7 +10,8 @@ class LoginMiddleware {
 
 		if(!$session->exists("usuario_logado") OR empty($session->get("usuario_logado"))){
 			//echo "redirecionamento para ". $request->getUri()->getBasePath(); exit();
-			return $response->withRedirect( $request->getUri()->getBasePath()); 
+			$url = (!empty($request->getUri()->getBasePath())) ? $request->getUri()->getBasePath() : "/";
+			return $response->withRedirect( $url); 
 		}
 		
 		return $next($request, $response);
